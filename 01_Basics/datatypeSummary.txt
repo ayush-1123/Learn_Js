@@ -1,0 +1,28 @@
+Primitive
+(call by value)
+7 types: String, Number, Boolean, null, undefined, Symbol, BigInt
+
+=> Is JS dynamically typed or statically typed?
+JavaScript is a *dynamic language and not static, which means that variables can hold values of different types during runtime. Unlike languages such as Typescript or Java, you don't need to declare the data type of a variable explicitly
+
+const id = Symbol('123')
+const anotherId = Symbol('123')
+
+console.log(id === anotherId); => false
+As we pass the same value but it returns the unique value every time
+
+const bigNumber = 3543576356426655n => BigInt datatype
+
+Non-Primitive(Reference)
+
+Array, Object, Functions
+
+const animals = ["dog", "cat", "horse"]
+
+let myObj = {
+    name: john,
+    age: 24, and many more 
+}
+inside obj => diff datatypes, array, functions, another object
+
+function()
