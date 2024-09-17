@@ -16,7 +16,28 @@
 const id = Symbol('123')
 const anotherId = Symbol('123')
 
-console.log(id === anotherId);
+//console.log(id === anotherId);
+
+let myString = "jaipur"
+let newString = myString // creating a deep copy of myString
+newString = "delhi"
+
+//console.log(myString); // jaipur
+//console.log(newString); // delhi
+
+let user1 = {
+    email: "user@gmail.com",
+    upi: "user@ybl"
+}
+
+let user2 = user1
+user2.email = "anny@gmail.com"
+
+console.log(user1.email); // anny@gmail.com
+console.log(user2.email); // anny@gmail.com
+
+
+
 
 
 

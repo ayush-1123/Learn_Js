@@ -9,12 +9,12 @@ const id = Symbol('123')
 const anotherId = Symbol('123')
 
 console.log(id === anotherId); => false
-As we pass the same value but it returns the unique value every time
+As we pass the same value but it returns the unique value every time, hence returns false
 
 const bigNumber = 3543576356426655n => BigInt datatype
 
 Non-Primitive(Reference)
-
+(call by Reference)
 Array, Object, Functions
 
 const animals = ["dog", "cat", "horse"]
@@ -25,4 +25,42 @@ let myObj = {
 }
 inside obj => diff datatypes, array, functions, another object
 
-function()
+const myFunc = function(){
+    console.log("hello");
+}
+
+typeof => to check the datatype
+**console.log(typeof null); => Object
+typeof(Object) => Object : native & not implemented
+typeof(Object) => function : native/host & implemented
+typeof(myFunc) => function (called as functionObject)
+
+######################################
+
+Memory allocation in JS
+=> Stack(Primitive) and Heap(Non-Primitive)
+    copy                    Reference
+    (creating a deep        (creating a shallow 
+    copy)                   copy)
+    does not affect         affects the original
+    original ones           ones
+
+// creating a deep copy of myString
+let myString = "jaipur"
+let newString = myString 
+newString = "delhi"
+
+console.log(myString); // jaipur
+console.log(newString); // delhi
+
+// creating a shallow copy of Object user1
+let user1 = {
+    email: "user@gmail.com",
+    upi: "user@ybl"
+}
+
+let user2 = user1
+user2.email = "anny@gmail.com"
+
+console.log(user1.email); // anny@gmail.com
+console.log(user2.email); // anny@gmail.com
