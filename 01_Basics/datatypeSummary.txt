@@ -44,6 +44,7 @@ Memory allocation in JS
     copy)                   copy)
     does not affect         affects the original
     original ones           ones
+----shallow copy => which shares the same refernece point
 
 // creating a deep copy of myString
 let myString = "jaipur"
