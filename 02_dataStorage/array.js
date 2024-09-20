@@ -45,11 +45,22 @@ const anotherArr = [...arr1, ...arr2]
 //console.log(anotherArr);
 
 const array = [1,2,3,[4,5,6],7,[6,7,[4,5]]]
-// const anotherArray = array.flat(Infinity)
-// console.log(anotherArray);
+// const anotherArray = array.flat(Infinity) => serrogates all the array and takes the element and output the singls array
+// console.log(anotherArray); => a single array as an output 
 
-console.log(Array.isArray("Ravi"));
-console.log(Array.from("Ravi"));
+// console.log(Array.isArray("Ravi")); => checks the passed parameter is array? 
+// console.log(Array.from("Ravi")); => converts the passed parameter to array
+// console.log(Array.from({name: "Ravi"})); => returns [] #interesting 
+// we have to tell it to output the array of keys or values
+
+let sum1 = 100
+let sum2 = 200
+let sum3 = 300
+
+//console.log(Array.of(sum1, sum2, sum3));
+
+
+
 
 
 
