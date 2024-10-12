@@ -1,6 +1,6 @@
 // Ways to create an object
 // 1)Constructor
-// singleton object
+// singleton object => Objects.create
 
 // 2)object literals
 
@@ -35,7 +35,7 @@ myUser.greeting = function(){
 }
 
 myUser.greetingTwo = function(){
-    //console.log(`Hello myUser, ${this.name}`);
+    //console.log(`Hello myUser, ${this.name}`); ``is used for String Interpolation
 }
 
 // console.log(myUser.greeting());
@@ -85,6 +85,20 @@ const obj3 = {...obj1, ...obj2} // using spread operator n used most of the time
 
 
 //**************************************************************** */
+
+// How to destructure the Objects
+
+const course = {
+    courseName : "learn JS",
+    price : "999",
+    courseMentor : "hitesh" 
+}
+
+//course.courseMentor
+const {courseMentor : teacher} = course // by this we can do destructure
+//the name 'courseMentor' can be alias as 'teacher'
+//console.log(courseMentor);
+//console.log(teacher);
 
 
 
